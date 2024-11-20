@@ -9,7 +9,7 @@ type TodoItemProps = {
 
 export default function TodoItem({ todo, editItem, delItem }: TodoItemProps) {
   return (
-    <div className="shadow-lg bg-blue-200 rounded-lg p-4 transform hover:scale-110 transition-transform duration-200">
+    <div className="shadow-lg w-full bg-blue-200 rounded-lg p-4 transform hover:scale-110 transition-transform duration-200">
       <div className="flex justify-between text-lg">
         <span className="shadow-lg rounded-full bg-white h-8 text-center w-8 my-auto">
           {todo.id}
@@ -21,7 +21,7 @@ export default function TodoItem({ todo, editItem, delItem }: TodoItemProps) {
           X
         </span>
       </div>
-      <div className="mt-5 text-[30px] text-blue-900">{todo.item}</div>
+      <div className="mt-5 sm:text-[22px] text-[18px] md:text-[28px] lg:text-[32px] text-blue-900">{todo.item}</div>
       <div className="text-right" >
         <button
           onClick={() => editItem(todo.id)}
