@@ -50,8 +50,8 @@ export default function TodoApp() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-5">
-      <h1 className="text-center font-bold text-blue-900 text-[40px]">Chore App</h1>
+    <div className="w-auto mx-auto p-5">
+      <h1 className="text-center font-bold text-blue-900 sm:text-[32px] text-[28px] md:text-[38px] lg:text-[40px]">Chore App</h1>
       <TodoForm
         inputVal={inputVal}
         setInput={setInput}
